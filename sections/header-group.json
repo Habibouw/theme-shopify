@@ -17,7 +17,7 @@
         "message": {
           "type": "message",
           "settings": {
-            "text": "BLACK FRIDAY: 50% OFF + Free Shipping",
+            "text": "SOLDES D'ÉTÉ : 2 soutiens-gorge achetés = 1 OFFERT",
             "url": ""
           }
         }
@@ -25,14 +25,15 @@
       "block_order": [
         "message"
       ],
+      "custom_css": [],
       "settings": {
         "enable_sticky": true,
-        "autoplay": false,
+        "autoplay": true,
         "cycle_speed": 6,
         "text_size": "text-xs",
-        "navigation_mode": "scrolling",
+        "navigation_mode": "arrows",
         "scrolling_speed": 10,
-        "background": "#A8654E",
+        "background": "#a8654e",
         "background_gradient": "",
         "text_color": "#ffffff"
       }
