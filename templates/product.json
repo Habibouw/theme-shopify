@@ -215,12 +215,246 @@
         "content_width": 120,
         "border_thickness": 0
       }
+    },
+    "custom_reviews_Qwj3Bg": {
+      "type": "custom-reviews",
+      "blocks": {
+        "review_bmwUTW": {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "author": "Petra R.",
+            "date": "03/01/2026",
+            "title": "Sehr gut unter Kleidern",
+            "text": "Feine und unauffällige Träger, passt unter alles. Man braucht keine drei BHs mehr für verschiedene Outfits."
+          }
+        },
+        "review_3rpymq": {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "author": "Anja L.",
+            "date": "09/11/2025",
+            "title": "Tolle Überraschung für den Preis",
+            "text": "Bei dem Preis hatte ich weniger Qualität erwartet. Letztendlich ist er sehr gut verarbeitet."
+          }
+        },
+        "review_7EpYjm": {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "author": "Sabine L.",
+            "date": "04/22/2025",
+            "title": "Perfekt ab 50",
+            "text": "Komfort und Halt ohne Bügel, genau das, was ich gesucht habe."
+          }
+        },
+        "review_iYWCya": {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "author": "Inga G.",
+            "date": "04/11/2025",
+            "title": "Eine echte Entdeckung",
+            "text": "Sehr angenehm den ganzen Tag zu tragen, keine Abdrücke auf der Haut."
+          }
+        },
+        "review_3hAFQY": {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "author": "Helene M.",
+            "date": "03/04/2025",
+            "title": "Der perfekte Kompromiss",
+            "text": "Halt ohne Bügel, ich war skeptisch. Ehrlich gesagt ist es bei meiner Größe verblüffend."
+          }
+        },
+        "review_kEW8WU": {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "author": "Clara D.",
+            "date": "01/01/2025",
+            "title": "Sehr gut geschnitten",
+            "text": "Er passt sich wirklich der Form an, ohne einzuengen. Ich kann tief durchatmen, ohne das Gefühl zu haben, zu ersticken."
+          }
+        },
+        "review_YGcbRC": {
+          "type": "review",
+          "settings": {
+            "rating": 4,
+            "author": "CLAUDIA M. - Verifiziert",
+            "date": "06/25/2026",
+            "title": "Nach dem Waschen unverändert, der Halt ist wirklich gut",
+            "text": "Nach dem Waschen hat er sich nicht verändert, er hält wirklich gut. Allerdings habe ich ihn zwei Nummern größer bestellt als empfohlen."
+          }
+        },
+        "review_D3xdEQ": {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "author": "Gisela G. - Verifiziert",
+            "date": "06/19/2026",
+            "title": "Super!!!!",
+            "text": "Es hat etwas gedauert, aber das Warten hat sich gelohnt. Die Größe stimmt, das Material ist sehr bequem und ganz ehrlich, ich fühle mich sehr wohl darin."
+          }
+        },
+        "review_mYPKJX": {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "author": "Anna M.",
+            "date": "04/23/2026",
+            "title": "Eine echte Entdeckung",
+            "text": "Man vergisst ihn komplett, selbst nach mehreren Stunden."
+          }
+        },
+        "review_cbrWaQ": {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "author": "Birgit F.",
+            "date": "04/21/2026",
+            "title": "Meine Haltung hat sich verbessert",
+            "text": "Meine Physiotherapeutin hat den Unterschied schon nach zwei Sitzungen bemerkt. Ich hätte nicht gedacht, dass ein BH so viel ausmachen kann."
+          }
+        },
+        "review_GUg6Qc": {
+          "type": "review",
+          "settings": {
+            "rating": 4,
+            "author": "Anna M.",
+            "date": "04/17/2026",
+            "title": "Endlich Erleichterung",
+            "text": "Schon in den ersten Stunden fühlten sich meine Schultern viel entspannter an. Ich stehe mühelos gerader und das verändert den Alltag wirklich."
+          }
+        },
+        "review_aDd4rr": {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "author": "Julia S.",
+            "date": "04/12/2026",
+            "title": "Kein Einengungsgefühl mehr",
+            "text": "Meine alten Bügel-BHs musste ich sofort ausziehen, wenn ich nach Hause kam. Den hier trage ich den ganzen Abend ohne Beschwerden."
+          }
+        },
+        "review_KqfYXf": {
+          "type": "review",
+          "settings": {
+            "rating": 3,
+            "author": "Monika C.",
+            "date": "04/11/2026",
+            "title": "Nicht für jede Figur geeignet",
+            "text": "Meine Schwester liebt ihn, ich eher weniger. Ich denke, es hängt wirklich von der Brustform ab."
+          }
+        },
+        "review_BK8LyV": {
+          "type": "review",
+          "settings": {
+            "rating": 4,
+            "author": "Ilona G.",
+            "date": "04/11/2026",
+            "title": "Sehr gut",
+            "text": "Bequem und hübsch. Einen Stern Abzug, da ich die Spitze anfangs etwas kratzig fand, was sich nach dem Waschen aber weicher anfühlte."
+          }
+        },
+        "review_iVawtF": {
+          "type": "review",
+          "settings": {
+            "rating": 4,
+            "author": "Katrin L.",
+            "date": "04/09/2026",
+            "title": "Natürlicher und sanfter Halt",
+            "text": "Sehr angenehm zu tragen, er stützt gut, ohne jemals einzuengen. Ich fühle mich gehalten und habe trotzdem Bewegungsfreiheit, ein echter Komfort im Alltag."
+          }
+        },
+        "review_839KLV": {
+          "type": "review",
+          "settings": {
+            "rating": 4,
+            "author": "Nadja P.",
+            "date": "04/08/2026",
+            "title": "Praktisch und unauffällig",
+            "text": "Kein großes Problem. Einen Stern Abzug, weil ich ihn für das, was er ist, ein bisschen teuer finde."
+          }
+        },
+        "review_Rwmpht": {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "author": "Martina R.",
+            "date": "04/01/2026",
+            "title": "Halt und Freiheit",
+            "text": "Beides auf einmal, danach habe ich jahrelang gesucht. Endlich gefunden."
+          }
+        },
+        "review_yEPhdU": {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "author": "Franziska C.",
+            "date": "03/27/2026",
+            "title": "Ich richte mich ganz unbewusst auf",
+            "text": "Meine Tochter meinte, meine Haltung sei anders. Es stimmt, ich merke, dass meine Schultern weniger nach vorne hängen."
+          }
+        },
+        "review_Vm7GED": {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "author": "Birgit F.",
+            "date": "03/21/2026",
+            "title": "Eine echte Entdeckung",
+            "text": "Der Halt ist natürlich, ich stehe gerader, ohne auch nur darüber nachzudenken."
+          }
+        },
+        "review_grw7xg": {
+          "type": "review",
+          "settings": {
+            "rating": 4,
+            "author": "Christina R.",
+            "date": "03/21/2026",
+            "title": "Sofort überzeugt",
+            "text": "Ich habe ihn einen Tag getragen und den Unterschied sofort gemerkt. Weniger Verspannungen im oberen Rücken, mehr Komfort… ein Zurück ist unmöglich."
+          }
+        }
+      },
+      "block_order": [
+        "review_bmwUTW",
+        "review_3rpymq",
+        "review_7EpYjm",
+        "review_iYWCya",
+        "review_3hAFQY",
+        "review_kEW8WU",
+        "review_YGcbRC",
+        "review_D3xdEQ",
+        "review_mYPKJX",
+        "review_cbrWaQ",
+        "review_GUg6Qc",
+        "review_aDd4rr",
+        "review_KqfYXf",
+        "review_BK8LyV",
+        "review_iVawtF",
+        "review_839KLV",
+        "review_Rwmpht",
+        "review_yEPhdU",
+        "review_Vm7GED",
+        "review_grw7xg"
+      ],
+      "name": "Avis Clients Custom",
+      "settings": {
+        "heading": "Kundenbewertungen",
+        "average_rating": "4.6",
+        "total_reviews": "124"
+      }
     }
   },
   "order": [
     "main",
     "sp_payment_icons_AzfVwT",
     "custom_liquid_YbxFdh",
-    "ss_wave_2_nBpHJi"
+    "ss_wave_2_nBpHJi",
+    "custom_reviews_Qwj3Bg"
   ]
 }
