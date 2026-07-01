@@ -7,7 +7,7 @@
     margin: 0 auto;
     padding: 50px 20px;
     font-family: sans-serif;
-    align-items: flex-start !important; /* Force l'alignement strict en haut */
+    align-items: center !important; /* Centre tout verticalement */
   }
   .results-content {
     flex: 1 1 500px;
@@ -17,14 +17,14 @@
     flex: 1 1 500px;
     display: flex;
     justify-content: center;
-    align-items: flex-start !important;
+    align-items: center !important; /* Assure le centrage de l'image */
   }
   .results-single-image img {
     width: 100%;
     height: auto;
     border-radius: 12px;
     object-fit: contain;
-    margin-top: 7px; /* Aligne visuellement l'image avec le haut des lettres du titre */
+    margin-top: 0; /* Plus de marge au-dessus */
     display: block;
   }
   .results-title {
@@ -75,7 +75,6 @@
     width: 100%;
     aspect-ratio: 16/9;
     border: 1px solid #ddd;
-    margin-top: 7px;
   }
   
   @media (max-width: 768px) {
