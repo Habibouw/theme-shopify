@@ -448,13 +448,28 @@
         "average_rating": "4.6",
         "total_reviews": "124"
       }
+    },
+    "custom_results_en4gz3": {
+      "type": "custom-results",
+      "name": "Résultats Visibles",
+      "settings": {
+        "title": "Des résultats visibles dès la première utilisation",
+        "subtitle": "Enquête clientes internes, 214 répondantes, avril 2025",
+        "stat_1_num": "92%",
+        "stat_1_text": "constatent un meilleur maintien du dos et une posture plus droite dès les premières utilisations.",
+        "stat_2_num": "85%",
+        "stat_2_text": "ressentent moins de tensions au niveau des épaules et apprécient le confort sans armatures au quotidien.",
+        "stat_3_num": "81%",
+        "stat_3_text": "ont remplacé leurs anciens soutiens-gorge inconfortables par ce modèle pour un maintien plus confortable et naturel."
+      }
     }
   },
   "order": [
     "main",
     "sp_payment_icons_AzfVwT",
+    "custom_results_en4gz3",
     "custom_liquid_YbxFdh",
-    "ss_wave_2_nBpHJi",
-    "custom_reviews_Qwj3Bg"
+    "custom_reviews_Qwj3Bg",
+    "ss_wave_2_nBpHJi"
   ]
 }
