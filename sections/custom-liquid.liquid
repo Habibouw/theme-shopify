@@ -7,23 +7,25 @@
     margin: 0 auto;
     padding: 50px 20px;
     font-family: sans-serif;
-    align-items: flex-start;
+    align-items: flex-start !important; /* Force l'alignement strict en haut */
   }
   .results-content {
     flex: 1 1 500px;
+    padding-top: 0;
   }
   .results-single-image {
     flex: 1 1 500px;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: flex-start !important;
   }
   .results-single-image img {
     width: 100%;
     height: auto;
     border-radius: 12px;
     object-fit: contain;
-    margin-top: 0;
+    margin-top: 7px; /* Aligne visuellement l'image avec le haut des lettres du titre */
+    display: block;
   }
   .results-title {
     font-size: 1.6rem;
@@ -31,7 +33,7 @@
     margin-top: 0 !important;
     margin-bottom: 15px !important;
     padding-top: 0 !important;
-    line-height: 1.2;
+    line-height: 1.1;
     font-weight: normal;
   }
   .results-subtitle {
@@ -73,6 +75,7 @@
     width: 100%;
     aspect-ratio: 16/9;
     border: 1px solid #ddd;
+    margin-top: 7px;
   }
   
   @media (max-width: 768px) {
