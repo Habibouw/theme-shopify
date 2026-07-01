@@ -100,7 +100,7 @@
   
   <div class="results-single-image">
     {% if section.settings.main_image != blank %}
-      <img src="{{ section.settings.main_image | image_url: width: 800 }}" alt="Résultats avant après">
+      <img src="{{ section.settings.main_image | image_url: width: 800 }}" alt="Vorher-Nachher-Ergebnisse">
     {% else %}
       <div class="placeholder-img"></div>
     {% endif %}
@@ -109,65 +109,65 @@
 
 {% schema %}
 {
-  "name": "Résultats Visibles",
+  "name": "Sichtbare Ergebnisse",
   "settings": [
     {
       "type": "text",
       "id": "title",
-      "label": "Titre principal",
-      "default": "Des résultats visibles dès la première utilisation"
+      "label": "Haupttitel",
+      "default": "Sichtbare Ergebnisse schon ab der ersten Anwendung"
     },
     {
       "type": "text",
       "id": "subtitle",
-      "label": "Sous-titre",
-      "default": "Enquête clientes internes, 214 répondantes, avril 2025"
+      "label": "Untertitel",
+      "default": "Interne Kundenumfrage, 214 Befragte, April 2025"
     },
     {
       "type": "text",
       "id": "stat_1_num",
-      "label": "Chiffre 1",
+      "label": "Zahl 1",
       "default": "92%"
     },
     {
       "type": "textarea",
       "id": "stat_1_text",
-      "label": "Texte 1",
-      "default": "constatent un meilleur maintien du dos et une posture plus droite dès les premières utilisations."
+      "label": "Text 1",
+      "default": "bemerken eine bessere Unterstützung des Rückens und eine aufrechtere Haltung ab den ersten Anwendungen."
     },
     {
       "type": "text",
       "id": "stat_2_num",
-      "label": "Chiffre 2",
+      "label": "Zahl 2",
       "default": "85%"
     },
     {
       "type": "textarea",
       "id": "stat_2_text",
-      "label": "Texte 2",
-      "default": "ressentent moins de tensions au niveau des épaules et apprécient le confort sans armatures au quotidien."
+      "label": "Text 2",
+      "default": "spüren weniger Verspannungen an den Schultern und schätzen den bügellosen Komfort im Alltag."
     },
     {
       "type": "text",
       "id": "stat_3_num",
-      "label": "Chiffre 3",
+      "label": "Zahl 3",
       "default": "81%"
     },
     {
       "type": "textarea",
       "id": "stat_3_text",
-      "label": "Texte 3",
-      "default": "ont remplacé leurs anciens soutiens-gorge inconfortables par ce modèle pour un maintien plus confortable et naturel."
+      "label": "Text 3",
+      "default": "haben ihre alten, unbequemen BHs durch dieses Modell ersetzt, für einen bequemeren und natürlicheren Halt."
     },
     {
       "type": "image_picker",
       "id": "main_image",
-      "label": "Image Globale"
+      "label": "Gesamtbild"
     }
   ],
   "presets": [
     {
-      "name": "Résultats Visibles"
+      "name": "Sichtbare Ergebnisse"
     }
   ]
 }
