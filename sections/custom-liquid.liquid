@@ -1,76 +1,173 @@
-{%- if section.settings.liquid != blank -%}
-  {%- render 'section-spacing-collapsing' -%}
-
-  <style>
-    #shopify-section-{{ section.id }} {
-      {% if section.settings.remove_vertical_spacing %}--section-spacing-block: 0px;{% endif %}
-      {% if section.settings.remove_horizontal_spacing %}--section-spacing-inline: 0px;{% endif %}
+<style>
+  .custom-results-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
+    font-family: sans-serif;
+    align-items: flex-start;
+  }
+  .results-content {
+    flex: 1 1 500px;
+  }
+  .results-single-image {
+    flex: 1 1 500px;
+    display: flex;
+    justify-content: center;
+  }
+  .results-single-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    object-fit: contain;
+  }
+  .results-title {
+    font-size: 1.6rem;
+    color: #555;
+    margin: 0 0 15px 0;
+    font-weight: normal;
+  }
+  .results-subtitle {
+    font-size: 0.95rem;
+    color: #888;
+    margin: 0 0 30px 0;
+  }
+  .stat-row {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding: 25px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .stat-row:first-of-type {
+    border-top: 1px solid #f0f0f0;
+  }
+  .stat-circle {
+    width: 65px;
+    height: 65px;
+    border: 4px solid #dfc3ba;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #dfc3ba;
+    font-size: 1.3rem;
+    flex-shrink: 0;
+  }
+  .stat-text {
+    font-size: 0.95rem;
+    color: #777;
+    line-height: 1.5;
+  }
+  .placeholder-img {
+    background: #f4f4f4;
+    border-radius: 12px;
+    width: 100%;
+    aspect-ratio: 16/9;
+    border: 1px solid #ddd;
+  }
+  
+  @media (max-width: 768px) {
+    .custom-results-section {
+      flex-direction: column;
     }
-  </style>
+  }
+</style>
 
-  <div {% render 'section-properties' %}>
-    {{ section.settings.liquid }}
+<div class="custom-results-section">
+  <div class="results-content">
+    <h2 class="results-title">{{ section.settings.title }}</h2>
+    <p class="results-subtitle">{{ section.settings.subtitle }}</p>
+    
+    <div class="stat-row">
+      <div class="stat-circle">{{ section.settings.stat_1_num }}</div>
+      <div class="stat-text">{{ section.settings.stat_1_text }}</div>
+    </div>
+    
+    <div class="stat-row">
+      <div class="stat-circle">{{ section.settings.stat_2_num }}</div>
+      <div class="stat-text">{{ section.settings.stat_2_text }}</div>
+    </div>
+    
+    <div class="stat-row">
+      <div class="stat-circle">{{ section.settings.stat_3_num }}</div>
+      <div class="stat-text">{{ section.settings.stat_3_text }}</div>
+    </div>
   </div>
-{%- endif -%}
+  
+  <div class="results-single-image">
+    {% if section.settings.main_image != blank %}
+      <img src="{{ section.settings.main_image | image_url: width: 800 }}" alt="Résultats avant après">
+    {% else %}
+      <div class="placeholder-img"></div>
+    {% endif %}
+  </div>
+</div>
 
 {% schema %}
 {
-  "name": "Custom Liquid",
-  "class": "shopify-section--custom-liquid",
-  "tag": "section",
-  "disabled_on": {
-    "groups": ["custom.overlay"]
-  },
+  "name": "Résultats Visibles",
   "settings": [
     {
-      "type": "checkbox",
-      "id": "full_width",
-      "label": "Full width",
-      "default": true
+      "type": "text",
+      "id": "title",
+      "label": "Titre principal",
+      "default": "Des résultats visibles dès la première utilisation"
     },
     {
-      "type": "checkbox",
-      "id": "remove_vertical_spacing",
-      "label": "Remove vertical spacing",
-      "default": false
+      "type": "text",
+      "id": "subtitle",
+      "label": "Sous-titre",
+      "default": "Enquête clientes internes, 214 répondantes, avril 2025"
     },
     {
-      "type": "checkbox",
-      "id": "remove_horizontal_spacing",
-      "label": "Remove horizontal spacing",
-      "default": false
+      "type": "text",
+      "id": "stat_1_num",
+      "label": "Chiffre 1",
+      "default": "92%"
     },
     {
-      "type": "liquid",
-      "id": "liquid",
-      "label": "Liquid",
-      "info": "Add app snippets or other Liquid code to create advanced customizations.",
-      "default": "<p style=\"text-align: center\">Write or copy/paste Liquid code</p>"
+      "type": "textarea",
+      "id": "stat_1_text",
+      "label": "Texte 1",
+      "default": "constatent un meilleur maintien du dos et une posture plus droite dès les premières utilisations."
     },
     {
-      "type": "header",
-      "content": "Colors",
-      "info": "Gradient replaces solid colors when set."
+      "type": "text",
+      "id": "stat_2_num",
+      "label": "Chiffre 2",
+      "default": "85%"
     },
     {
-      "type": "color",
-      "id": "background",
-      "label": "Background"
+      "type": "textarea",
+      "id": "stat_2_text",
+      "label": "Texte 2",
+      "default": "ressentent moins de tensions au niveau des épaules et apprécient le confort sans armatures au quotidien."
     },
     {
-      "type": "color_background",
-      "id": "background_gradient",
-      "label": "Background gradient"
+      "type": "text",
+      "id": "stat_3_num",
+      "label": "Chiffre 3",
+      "default": "81%"
     },
     {
-      "type": "color",
-      "id": "text_color",
-      "label": "Text"
+      "type": "textarea",
+      "id": "stat_3_text",
+      "label": "Texte 3",
+      "default": "ont remplacé leurs anciens soutiens-gorge inconfortables par ce modèle pour un maintien plus confortable et naturel."
+    },
+    {
+      "type": "image_picker",
+      "id": "main_image",
+      "label": "Image Globale"
     }
   ],
   "presets": [
     {
-      "name": "Custom Liquid"
+      "name": "Résultats Visibles"
     }
   ]
 }
