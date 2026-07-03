@@ -4,7 +4,6 @@
     padding-bottom: 60px;
   }
   
-  /* Bandeau défilant */
   .marquee-wrapper {
     background-color: #000;
     color: #fff;
@@ -20,7 +19,7 @@
   .marquee-content {
     display: flex;
     gap: 40px;
-    animation: marquee 20s linear infinite;
+    animation: marquee 40s linear infinite;
     padding-right: 40px;
   }
   @keyframes marquee {
@@ -28,7 +27,6 @@
     100% { transform: translateX(-100%); }
   }
 
-  /* Carrousel Vidéo */
   .video-slider-container {
     max-width: 1200px;
     margin: 40px auto 0;
@@ -37,6 +35,7 @@
   }
   .video-track {
     display: flex;
+    justify-content: center;
     gap: 20px;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
@@ -57,7 +56,6 @@
     background: #000;
   }
   
-  /* Effet de mise en avant (style image centrale) */
   .video-card:hover {
     transform: scale(1.02);
     transition: transform 0.3s ease;
@@ -70,7 +68,6 @@
     opacity: 0.9;
   }
   
-  /* Icône Play/Pause en haut à droite */
   .play-icon {
     position: absolute;
     top: 15px;
@@ -88,7 +85,6 @@
     z-index: 2;
   }
 
-  /* Étoiles en bas */
   .video-stars {
     position: absolute;
     bottom: 20px;
@@ -103,6 +99,9 @@
   }
 
   @media (max-width: 768px) {
+    .video-track {
+      justify-content: flex-start;
+    }
     .video-card {
       flex: 0 0 260px;
       height: 460px;
