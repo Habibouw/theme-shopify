@@ -27,7 +27,7 @@
         "title": {
           "type": "title",
           "settings": {
-            "heading_tag": "h2"
+            "heading_tag": "h4"
           }
         },
         "badges": {
@@ -61,6 +61,12 @@
           "type": "description",
           "settings": {
             "collapse_content": false
+          }
+        },
+        "liquid_A9E8Cg": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<style>\n  .quick-look-container {\n    margin: 25px 0;\n    padding-bottom: 15px;\n  }\n  .quick-look-title {\n    font-weight: 700;\n    font-size: 13px;\n    letter-spacing: 1px;\n    text-transform: uppercase;\n    margin-bottom: 15px;\n    color: #333;\n  }\n  .quick-look-grid {\n    display: grid;\n    grid-template-columns: 1fr 1fr;\n    gap: 15px;\n  }\n  .quick-look-item {\n    display: flex;\n    align-items: flex-start;\n    gap: 8px;\n    font-size: 13.5px;\n    color: #555;\n    line-height: 1.4;\n  }\n  .quick-look-icon {\n    flex-shrink: 0;\n    width: 18px;\n    height: 18px;\n    margin-top: 1px;\n  }\n  @media (max-width: 480px) {\n    .quick-look-grid {\n      grid-template-columns: 1fr;\n      gap: 12px;\n    }\n  }\n</style>\n\n<div class=\"quick-look-container\">\n  <div class=\"quick-look-title\">Auf einen Blick</div>\n  <div class=\"quick-look-grid\">\n    <div class=\"quick-look-item\">\n      <svg class=\"quick-look-icon\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n        <circle cx=\"12\" cy=\"12\" r=\"10\"></circle>\n        <path d=\"M9 12l2 2 4-4\"></path>\n      </svg>\n      Unsichtbar unter jedem Outfit\n    </div>\n    <div class=\"quick-look-item\">\n      <svg class=\"quick-look-icon\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n        <circle cx=\"12\" cy=\"12\" r=\"10\"></circle>\n        <path d=\"M9 12l2 2 4-4\"></path>\n      </svg>\n      Natürlicher Halt ohne Bügel\n    </div>\n    <div class=\"quick-look-item\">\n      <svg class=\"quick-look-icon\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n        <circle cx=\"12\" cy=\"12\" r=\"10\"></circle>\n        <path d=\"M9 12l2 2 4-4\"></path>\n      </svg>\n      Richtet die Schultern sanft auf\n    </div>\n    <div class=\"quick-look-item\">\n      <svg class=\"quick-look-icon\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n        <circle cx=\"12\" cy=\"12\" r=\"10\"></circle>\n        <path d=\"M9 12l2 2 4-4\"></path>\n      </svg>\n      Keine Abdrücke oder Reibung\n    </div>\n  </div>\n</div>\n\n<style>\n  .custom-accordion {\n    border-top: 1px solid #eee;\n    border-bottom: 1px solid #eee;\n    padding: 15px 0;\n    margin-top: -1px; /* Permet de superposer les bordures si tu as plusieurs menus à la suite */\n  }\n  .custom-accordion summary {\n    font-weight: 600;\n    font-size: 14px;\n    cursor: pointer;\n    list-style: none;\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    color: #333;\n  }\n  .custom-accordion summary::-webkit-details-marker {\n    display: none;\n  }\n  .custom-accordion-title {\n    display: flex;\n    align-items: center;\n    gap: 8px;\n  }\n  .custom-accordion-content {\n    padding-top: 15px;\n    font-size: 13.5px;\n    color: #555;\n    line-height: 1.6;\n  }\n</style>\n\n<details class=\"custom-accordion\">\n  <summary>\n    <div class=\"custom-accordion-title\">\n      <svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n        <path d=\"M4 9h16a2 2 0 012 2v2a2 2 0 01-2 2H4a2 2 0 01-2-2v-2a2 2 0 012-2z\"></path>\n        <path d=\"M6 9v3\"></path>\n        <path d=\"M10 9v4\"></path>\n        <path d=\"M14 9v3\"></path>\n        <path d=\"M18 9v4\"></path>\n      </svg>\n      Größentabelle\n    </div>\n    <span style=\"font-size: 18px; font-weight: normal;\">+</span>\n  </summary>\n  <div class=\"custom-accordion-content\">\n    <p style=\"margin: 0 0 10px 0;\">Unsere Referenzgrößen basieren auf europäischen Standards.</p>\n    <p style=\"margin: 0 0 20px 0;\"><strong>Zwischen zwei Größen?</strong> Wählen Sie die größere Größe für optimalen Komfort.</p>\n    \n    <img src=\"https://cdn.shopify.com/s/files/1/0922/9398/8733/files/ChatGPT_Image_1_juil._2026_13_51_41_1cf397f6-6148-4c26-bcde-34695aa5fd9b.png?v=1783085280\" alt=\"Größentabelle\" style=\"width: 100%; height: auto; border-radius: 8px;\">\n  </div>\n</details>"
           }
         },
         "liquid_aDBdFd": {
@@ -123,6 +129,7 @@
         "rating",
         "separator",
         "description",
+        "liquid_A9E8Cg",
         "liquid_aDBdFd",
         "variant_picker",
         "quantity_selector",
