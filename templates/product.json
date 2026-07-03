@@ -135,38 +135,6 @@
         "input_text_color": ""
       }
     },
-    "video_carrousel_ipcKU4": {
-      "type": "video-carrousel",
-      "blocks": {
-        "video_card_MbRdqJ": {
-          "type": "video_card",
-          "settings": {
-            "video_url": "https://cdn.shopify.com/videos/c/o/v/706421a7b29643f7a5ed463902eb01a2.mp4"
-          }
-        },
-        "video_card_aihRzx": {
-          "type": "video_card",
-          "settings": {
-            "video_url": "https://cdn.shopify.com/videos/c/o/v/ffe84148a19d468f9538a64e1d997a6c.mp4"
-          }
-        },
-        "video_card_JmECYP": {
-          "type": "video_card",
-          "settings": {
-            "video_url": "https://cdn.shopify.com/videos/c/o/v/1507093102c84b07a49664b964ec9ca2.mp4"
-          }
-        }
-      },
-      "block_order": [
-        "video_card_MbRdqJ",
-        "video_card_aihRzx",
-        "video_card_JmECYP"
-      ],
-      "name": "Carrousel Vidéos UGC",
-      "settings": {
-        "marquee_text": "Invisible. Toujours. • Aucune marque • Zéro armature • Coton respirant • Posture redressée •"
-      }
-    },
     "sp_payment_icons_AzfVwT": {
       "type": "sp-payment-icons",
       "blocks": {
@@ -211,6 +179,38 @@
         "show_apple_pay": false,
         "show_google_pay": false,
         "show_shop_pay": false
+      }
+    },
+    "video_carrousel_ipcKU4": {
+      "type": "video-carrousel",
+      "blocks": {
+        "video_card_MbRdqJ": {
+          "type": "video_card",
+          "settings": {
+            "video_url": "https://cdn.shopify.com/videos/c/o/v/706421a7b29643f7a5ed463902eb01a2.mp4"
+          }
+        },
+        "video_card_aihRzx": {
+          "type": "video_card",
+          "settings": {
+            "video_url": "https://cdn.shopify.com/videos/c/o/v/ffe84148a19d468f9538a64e1d997a6c.mp4"
+          }
+        },
+        "video_card_JmECYP": {
+          "type": "video_card",
+          "settings": {
+            "video_url": "https://cdn.shopify.com/videos/c/o/v/1507093102c84b07a49664b964ec9ca2.mp4"
+          }
+        }
+      },
+      "block_order": [
+        "video_card_MbRdqJ",
+        "video_card_aihRzx",
+        "video_card_JmECYP"
+      ],
+      "name": "Carrousel Vidéos UGC",
+      "settings": {
+        "marquee_text": "Invisible. Toujours. • Aucune marque • Zéro armature • Coton respirant • Posture redressée •"
       }
     },
     "custom_liquid_cgciyk": {
@@ -499,8 +499,8 @@
   },
   "order": [
     "main",
-    "video_carrousel_ipcKU4",
     "sp_payment_icons_AzfVwT",
+    "video_carrousel_ipcKU4",
     "custom_liquid_cgciyk",
     "custom_html_LXNDPP",
     "custom_reviews_Qwj3Bg",
