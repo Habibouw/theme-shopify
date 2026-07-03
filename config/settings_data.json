@@ -161,8 +161,6 @@
     }
   },
   "platform_customizations": {
-    "custom_css": [
-      ".header {background-color: #ffffff !important; /* Replace #ffffff with your desired color */ opacity: 1 !important;}"
-    ]
+    "custom_css": []
   }
 }
