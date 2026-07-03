@@ -12,9 +12,14 @@
     "main": {
       "type": "main-product",
       "blocks": {
+        "liquid_Kj9UAX": {
+          "type": "liquid",
+          "settings": {
+            "liquid": ""
+          }
+        },
         "liquid_n8acXz": {
           "type": "liquid",
-          "disabled": true,
           "settings": {
             "liquid": "<div style=\"border: 2px solid #2B2422; border-radius: 4px; padding: 8px 16px; text-align: center; font-weight: 700; font-size: 14px; letter-spacing: 0.5px; max-width: fit-content; margin: 0 auto 12px auto;\">\n  2 ACHETÉS = 1 OFFERT\n</div>"
           }
@@ -103,6 +108,7 @@
         }
       },
       "block_order": [
+        "liquid_Kj9UAX",
         "liquid_n8acXz",
         "liquid_DJ4MjX",
         "title",
