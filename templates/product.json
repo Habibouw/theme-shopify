@@ -105,6 +105,12 @@
         "payment_terms": {
           "type": "payment_terms",
           "settings": {}
+        },
+        "liquid_zza9n6": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<div style=\"display: flex; justify-content: center; gap: 8px; margin-top: 15px; margin-bottom: 25px;\">\n  {{ 'visa' | payment_type_svg_tag: class: 'custom-pay-icon' }}\n  {{ 'master' | payment_type_svg_tag: class: 'custom-pay-icon' }}\n  {{ 'american_express' | payment_type_svg_tag: class: 'custom-pay-icon' }}\n  {{ 'paypal' | payment_type_svg_tag: class: 'custom-pay-icon' }}\n</div>\n\n<style>\n  .custom-pay-icon { \n    height: 24px; \n    width: auto; \n    border-radius: 4px; \n    border: 1px solid #f0f0f0;\n  }\n  .custom-accordion {\n    border-top: 1px solid #eee;\n    border-bottom: 1px solid #eee;\n    padding: 15px 0;\n    margin-top: 10px;\n  }\n  .custom-accordion summary {\n    font-weight: 600;\n    font-size: 14px;\n    cursor: pointer;\n    list-style: none;\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    color: #333;\n  }\n  .custom-accordion summary::-webkit-details-marker {\n    display: none;\n  }\n  .custom-accordion-title {\n    display: flex;\n    align-items: center;\n    gap: 8px;\n  }\n  .custom-accordion-content {\n    padding-top: 15px;\n    font-size: 13.5px;\n    color: #555;\n    line-height: 1.6;\n  }\n</style>\n\n<details class=\"custom-accordion\">\n  <summary>\n    <div class=\"custom-accordion-title\">\n      <svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n        <circle cx=\"12\" cy=\"12\" r=\"10\"></circle>\n        <path d=\"M9 12l2 2 4-4\"></path>\n      </svg>\n      Material & Pflege\n    </div>\n    <span style=\"font-size: 18px; font-weight: normal;\">+</span>\n  </summary>\n  <div class=\"custom-accordion-content\">\n    <p style=\"margin: 0 0 10px 0;\">Entwickelt für ultimativen Komfort und Langlebigkeit, der sich wie eine zweite Haut anfühlt.</p>\n    <p style=\"margin: 0 0 10px 0;\"><strong>Zusammensetzung:</strong> 75% hochwertiges Nylon, 25% dehnbare Faser (Spandex). Diese Premium-Mischung garantiert ein extrem weiches, atmungsaktives Hautgefühl und passt sich deiner Körperform perfekt an, ohne jemals auszuleiern.</p>\n    <p style=\"margin: 0;\"><strong>Pflege:</strong> Um die Fasern zu schonen, empfehlen wir Handwäsche. Nicht bleichen, nicht bügeln und an der Luft trocknen lassen.</p>\n  </div>\n</details>"
+          }
         }
       },
       "block_order": [
@@ -122,7 +128,8 @@
         "quantity_selector",
         "buy_buttons",
         "liquid_MWTccL",
-        "payment_terms"
+        "payment_terms",
+        "liquid_zza9n6"
       ],
       "settings": {
         "full_width": true,
@@ -140,52 +147,6 @@
         "text_color": "",
         "input_background": "rgba(0,0,0,0)",
         "input_text_color": ""
-      }
-    },
-    "sp_payment_icons_AzfVwT": {
-      "type": "sp-payment-icons",
-      "blocks": {
-        "image_BYPLgF": {
-          "type": "image",
-          "settings": {
-            "alt_text": ""
-          }
-        },
-        "image_E8WTLH": {
-          "type": "image",
-          "settings": {
-            "alt_text": ""
-          }
-        },
-        "image_e8EKE4": {
-          "type": "image",
-          "settings": {
-            "alt_text": ""
-          }
-        }
-      },
-      "block_order": [
-        "image_BYPLgF",
-        "image_E8WTLH",
-        "image_e8EKE4"
-      ],
-      "settings": {
-        "background_color": "linear-gradient(164deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
-        "max_width": 1000,
-        "icon_height": 50,
-        "icon_gap": 5,
-        "padding_top": 25,
-        "padding_bottom": 25,
-        "padding_left": 10,
-        "padding_right": 10,
-        "show_visa": true,
-        "show_mastercard": true,
-        "show_american_express": true,
-        "show_discover": false,
-        "show_paypal": true,
-        "show_apple_pay": false,
-        "show_google_pay": false,
-        "show_shop_pay": false
       }
     },
     "video_carrousel_ipcKU4": {
@@ -248,40 +209,43 @@
         "text_color": ""
       }
     },
-    "custom_reviews_Qwj3Bg": {
+    "custom_reviews_i4U7dK": {
       "type": "custom-reviews",
       "blocks": {
-        "review_bmwUTW": {
+        "review_B8kRQU": {
           "type": "review",
           "settings": {
             "rating": 5,
             "author": "Petra R.",
             "date": "03/01/2026",
             "title": "Sehr gut unter Kleidern",
-            "text": "Feine und unauffällige Träger, passt unter alles. Man braucht keine drei BHs mehr für verschiedene Outfits."
+            "text": "Feine und unauffällige Träger, passt unter alles. Man braucht keine drei BHs mehr für verschiedene Outfits.",
+            "image": "shopify://shop_images/1777796242__1777796235298-hf_20260503_075856_5ae48f1__original.webp"
           }
         },
-        "review_3rpymq": {
+        "review_PqA44r": {
           "type": "review",
           "settings": {
             "rating": 5,
             "author": "Anja L.",
             "date": "09/11/2025",
             "title": "Tolle Überraschung für den Preis",
-            "text": "Bei dem Preis hatte ich weniger Qualität erwartet. Letztendlich ist er sehr gut verarbeitet."
+            "text": "Bei dem Preis hatte ich weniger Qualität erwartet. Letztendlich ist er sehr gut verarbeitet.",
+            "image": "shopify://shop_images/1777795955__1777795944537-hf_20260503_064841_dc7d8a1__original.webp"
           }
         },
-        "review_7EpYjm": {
+        "review_Cb9WUw": {
           "type": "review",
           "settings": {
             "rating": 5,
             "author": "Sabine L.",
             "date": "04/22/2025",
             "title": "Perfekt ab 50",
-            "text": "Komfort und Halt ohne Bügel, genau das, was ich gesucht habe."
+            "text": "Komfort und Halt ohne Bügel, genau das, was ich gesucht habe.",
+            "image": "shopify://shop_images/1777796306__1777796301778-screenshot2026-05-03at3074__original.webp"
           }
         },
-        "review_iYWCya": {
+        "review_dALacj": {
           "type": "review",
           "settings": {
             "rating": 5,
@@ -291,27 +255,29 @@
             "text": "Sehr angenehm den ganzen Tag zu tragen, keine Abdrücke auf der Haut."
           }
         },
-        "review_3hAFQY": {
+        "review_j9xcLP": {
           "type": "review",
           "settings": {
             "rating": 5,
             "author": "Helene M.",
             "date": "03/04/2025",
             "title": "Der perfekte Kompromiss",
-            "text": "Halt ohne Bügel, ich war skeptisch. Ehrlich gesagt ist es bei meiner Größe verblüffend."
+            "text": "Halt ohne Bügel, ich war skeptisch. Ehrlich gesagt ist es bei meiner Größe verblüffend.",
+            "image": "shopify://shop_images/1777796264__1777796259288-hf_20260503_080034_c341ff9__original.webp"
           }
         },
-        "review_kEW8WU": {
+        "review_8KDAnq": {
           "type": "review",
           "settings": {
             "rating": 5,
             "author": "Clara D.",
             "date": "01/01/2025",
             "title": "Sehr gut geschnitten",
-            "text": "Er passt sich wirklich der Form an, ohne einzuengen. Ich kann tief durchatmen, ohne das Gefühl zu haben, zu ersticken."
+            "text": "Er passt sich wirklich der Form an, ohne einzuengen. Ich kann tief durchatmen, ohne das Gefühl zu haben, zu ersticken.",
+            "image": "shopify://shop_images/1777796329__1777796325595-hf_20260503_080516_0a4c7b8__original.webp"
           }
         },
-        "review_YGcbRC": {
+        "review_xCX3zw": {
           "type": "review",
           "settings": {
             "rating": 4,
@@ -321,17 +287,18 @@
             "text": "Nach dem Waschen hat er sich nicht verändert, er hält wirklich gut. Allerdings habe ich ihn zwei Nummern größer bestellt als empfohlen."
           }
         },
-        "review_D3xdEQ": {
+        "review_wkqRAa": {
           "type": "review",
           "settings": {
             "rating": 5,
             "author": "Gisela G. - Verifiziert",
             "date": "06/19/2026",
             "title": "Super!!!!",
-            "text": "Es hat etwas gedauert, aber das Warten hat sich gelohnt. Die Größe stimmt, das Material ist sehr bequem und ganz ehrlich, ich fühle mich sehr wohl darin."
+            "text": "Es hat etwas gedauert, aber das Warten hat sich gelohnt. Die Größe stimmt, das Material ist sehr bequem und ganz ehrlich, ich fühle mich sehr wohl darin.",
+            "image": "shopify://shop_images/1777796391__1777796381893-hf_20260503_080147_a75195a__original.webp"
           }
         },
-        "review_mYPKJX": {
+        "review_pqypP6": {
           "type": "review",
           "settings": {
             "rating": 5,
@@ -341,7 +308,7 @@
             "text": "Man vergisst ihn komplett, selbst nach mehreren Stunden."
           }
         },
-        "review_cbrWaQ": {
+        "review_yGjemT": {
           "type": "review",
           "settings": {
             "rating": 5,
@@ -351,7 +318,7 @@
             "text": "Meine Physiotherapeutin hat den Unterschied schon nach zwei Sitzungen bemerkt. Ich hätte nicht gedacht, dass ein BH so viel ausmachen kann."
           }
         },
-        "review_GUg6Qc": {
+        "review_jiRJGi": {
           "type": "review",
           "settings": {
             "rating": 4,
@@ -361,7 +328,7 @@
             "text": "Schon in den ersten Stunden fühlten sich meine Schultern viel entspannter an. Ich stehe mühelos gerader und das verändert den Alltag wirklich."
           }
         },
-        "review_aDd4rr": {
+        "review_jm4DrP": {
           "type": "review",
           "settings": {
             "rating": 5,
@@ -371,7 +338,7 @@
             "text": "Meine alten Bügel-BHs musste ich sofort ausziehen, wenn ich nach Hause kam. Den hier trage ich den ganzen Abend ohne Beschwerden."
           }
         },
-        "review_KqfYXf": {
+        "review_eLjfnb": {
           "type": "review",
           "settings": {
             "rating": 3,
@@ -381,7 +348,7 @@
             "text": "Meine Schwester liebt ihn, ich eher weniger. Ich denke, es hängt wirklich von der Brustform ab."
           }
         },
-        "review_BK8LyV": {
+        "review_tcrQzB": {
           "type": "review",
           "settings": {
             "rating": 4,
@@ -391,7 +358,7 @@
             "text": "Bequem und hübsch. Einen Stern Abzug, da ich die Spitze anfangs etwas kratzig fand, was sich nach dem Waschen aber weicher anfühlte."
           }
         },
-        "review_iVawtF": {
+        "review_dVWYT3": {
           "type": "review",
           "settings": {
             "rating": 4,
@@ -401,7 +368,7 @@
             "text": "Sehr angenehm zu tragen, er stützt gut, ohne jemals einzuengen. Ich fühle mich gehalten und habe trotzdem Bewegungsfreiheit, ein echter Komfort im Alltag."
           }
         },
-        "review_839KLV": {
+        "review_BrKf3L": {
           "type": "review",
           "settings": {
             "rating": 4,
@@ -411,7 +378,7 @@
             "text": "Kein großes Problem. Einen Stern Abzug, weil ich ihn für das, was er ist, ein bisschen teuer finde."
           }
         },
-        "review_Rwmpht": {
+        "review_pQDWYx": {
           "type": "review",
           "settings": {
             "rating": 5,
@@ -421,7 +388,7 @@
             "text": "Beides auf einmal, danach habe ich jahrelang gesucht. Endlich gefunden."
           }
         },
-        "review_yEPhdU": {
+        "review_rngzBq": {
           "type": "review",
           "settings": {
             "rating": 5,
@@ -431,7 +398,7 @@
             "text": "Meine Tochter meinte, meine Haltung sei anders. Es stimmt, ich merke, dass meine Schultern weniger nach vorne hängen."
           }
         },
-        "review_Vm7GED": {
+        "review_hdfRQz": {
           "type": "review",
           "settings": {
             "rating": 5,
@@ -441,7 +408,7 @@
             "text": "Der Halt ist natürlich, ich stehe gerader, ohne auch nur darüber nachzudenken."
           }
         },
-        "review_grw7xg": {
+        "review_kjDdNQ": {
           "type": "review",
           "settings": {
             "rating": 4,
@@ -453,26 +420,26 @@
         }
       },
       "block_order": [
-        "review_bmwUTW",
-        "review_3rpymq",
-        "review_7EpYjm",
-        "review_iYWCya",
-        "review_3hAFQY",
-        "review_kEW8WU",
-        "review_YGcbRC",
-        "review_D3xdEQ",
-        "review_mYPKJX",
-        "review_cbrWaQ",
-        "review_GUg6Qc",
-        "review_aDd4rr",
-        "review_KqfYXf",
-        "review_BK8LyV",
-        "review_iVawtF",
-        "review_839KLV",
-        "review_Rwmpht",
-        "review_yEPhdU",
-        "review_Vm7GED",
-        "review_grw7xg"
+        "review_B8kRQU",
+        "review_PqA44r",
+        "review_Cb9WUw",
+        "review_dALacj",
+        "review_j9xcLP",
+        "review_8KDAnq",
+        "review_xCX3zw",
+        "review_wkqRAa",
+        "review_pqypP6",
+        "review_yGjemT",
+        "review_jiRJGi",
+        "review_jm4DrP",
+        "review_eLjfnb",
+        "review_tcrQzB",
+        "review_dVWYT3",
+        "review_BrKf3L",
+        "review_pQDWYx",
+        "review_rngzBq",
+        "review_hdfRQz",
+        "review_kjDdNQ"
       ],
       "name": "Avis Clients Custom",
       "settings": {
@@ -506,11 +473,10 @@
   },
   "order": [
     "main",
-    "sp_payment_icons_AzfVwT",
     "video_carrousel_ipcKU4",
     "custom_liquid_cgciyk",
     "custom_html_LXNDPP",
-    "custom_reviews_Qwj3Bg",
+    "custom_reviews_i4U7dK",
     "ss_wave_2_nBpHJi"
   ]
 }
