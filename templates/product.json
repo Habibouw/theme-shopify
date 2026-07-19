@@ -21,7 +21,7 @@
         "liquid_DJ4MjX": {
           "type": "liquid",
           "settings": {
-            "liquid": "<div style=\"display: flex; align-items: center; gap: 6px; padding: 8px;\">\n  <span style=\"color: #00B67A; font-size: 22px; letter-spacing: 2px;\">★★★★★</span>\n  <span style=\"font-weight: 600; margin-left: 4px;\">4,8</span>\n  <span style=\"color: #666;\">+ 124 verifizierte Bewertungen</span>\n</div>"
+            "liquid": "<div style=\"display: flex; align-items: center; gap: 8px; font-family: Arial, sans-serif; padding: 12px; border-radius: 4px; max-width: fit-content;\">\n  <div style=\"display: flex; gap: 2px;\">\n    <!-- Étoiles pleines -->\n    <span style=\"background-color: #00B67A; width: 22px; height: 22px; display: flex; align-items: center; justify-content: center; color: white; font-size: 16px;\">★</span>\n    <span style=\"background-color: #00B67A; width: 22px; height: 22px; display: flex; align-items: center; justify-content: center; color: white; font-size: 16px;\">★</span>\n    <span style=\"background-color: #00B67A; width: 22px; height: 22px; display: flex; align-items: center; justify-content: center; color: white; font-size: 16px;\">★</span>\n    <span style=\"background-color: #00B67A; width: 22px; height: 22px; display: flex; align-items: center; justify-content: center; color: white; font-size: 16px;\">★</span>\n    <!-- Étoile partielle (80% vert, 20% gris) -->\n    <span style=\"background: linear-gradient(to right, #00B67A 80%, #E0E0E0 80%); width: 22px; height: 22px; display: flex; align-items: center; justify-content: center; color: white; font-size: 16px;\">★</span>\n  </div>\n  <span style=\"color: #333; font-size: 14px;\">Bewertet mit 4,8 Hervorragend | <strong>2.351 Bewertungen</strong></span>\n</div>"
           }
         },
         "title": {
@@ -451,8 +451,8 @@
       "name": "Avis Clients Custom",
       "settings": {
         "heading": "Kundenbewertungen",
-        "average_rating": "4.6",
-        "total_reviews": "124"
+        "average_rating": "4.8",
+        "total_reviews": "2351"
       }
     },
     "ss_wave_2_nBpHJi": {
