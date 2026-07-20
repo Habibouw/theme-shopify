@@ -86,10 +86,11 @@
     z-index: 2;
     pointer-events: none;
     transition: opacity 0.2s ease;
+    opacity: 0;
   }
 
-  .video-card.is-playing .play-icon {
-    opacity: 0;
+  .video-card.is-paused .play-icon {
+    opacity: 1;
   }
 
   .video-stars {
@@ -143,7 +144,7 @@
           <div class="play-icon">▶</div>
           
           {% if block.settings.video_url != blank %}
-            <video loop muted playsinline>
+            <video autoplay loop muted playsinline>
               <source src="{{ block.settings.video_url }}" type="video/mp4">
             </video>
           {% elsif block.settings.image != blank %}
@@ -167,10 +168,10 @@
     
     if (video.paused) {
       video.play();
-      element.classList.add('is-playing');
+      element.classList.remove('is-paused');
     } else {
       video.pause();
-      element.classList.remove('is-playing');
+      element.classList.add('is-paused');
     }
   }
 </script>
