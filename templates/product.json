@@ -200,7 +200,7 @@
         "video_card_JmECYP"
       ],
       "custom_css": [
-        "[class*=\"marquee\"],[class*=\"scrolling\"],.marquee-container {background-color: #faf5f0 !important;}"
+        "[class*=\"marquee\"],[class*=\"scrolling\"],.marquee-container {background-color: #a8654e !important;}"
       ],
       "name": "Carrousel Vidéos UGC",
       "settings": {
