@@ -101,6 +101,12 @@
             "liquid": "<style>\n  .custom-pay-icon { \n    height: 24px; \n    width: auto; \n    border-radius: 4px; \n    border: 1px solid #f0f0f0;\n  }\n</style>\n\n<div style=\"display: flex; justify-content: center; gap: 8px; margin-top: 15px; margin-bottom: 25px;\">\n  {{ 'shopify_pay' | payment_type_svg_tag: class: 'custom-pay-icon' }}\n  {{ 'visa' | payment_type_svg_tag: class: 'custom-pay-icon' }}\n  {{ 'master' | payment_type_svg_tag: class: 'custom-pay-icon' }}\n  {{ 'american_express' | payment_type_svg_tag: class: 'custom-pay-icon' }}\n  {{ 'apple_pay' | payment_type_svg_tag: class: 'custom-pay-icon' }}\n  {{ 'paypal' | payment_type_svg_tag: class: 'custom-pay-icon' }}\n</div>"
           }
         },
+        "liquid_rFPgkd": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<div class=\"bellvane-shipping-bar\">\n  <div class=\"ship-left\">\n    <span class=\"ship-dot\"></span>\n    <span class=\"ship-text\">Versand bis <strong id=\"ship-date\">...</strong></span>\n  </div>\n  <div class=\"ship-right\">\n    <span class=\"ship-small\">DE</span> <strong>Schneller</strong> DE Versand\n  </div>\n</div>\n\n<style>\n  .bellvane-shipping-bar {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    background-color: #EBE6DF; \n    padding: 12px 18px;\n    border-radius: 8px;\n    margin-top: 15px;\n    margin-bottom: 20px;\n    font-size: 14px;\n    color: #333;\n    letter-spacing: 0.3px;\n  }\n  \n  .ship-left {\n    display: flex;\n    align-items: center;\n  }\n  \n  .ship-dot {\n    width: 10px;\n    height: 10px;\n    background-color: #C28C6E; \n    border-radius: 50%;\n    margin-right: 12px;\n  }\n  \n  .ship-right {\n    font-size: 13.5px;\n    color: #444;\n  }\n  \n  .ship-small {\n    font-size: 10px;\n    text-transform: uppercase;\n    font-weight: 800;\n    margin-right: 2px;\n  }\n</style>\n\n<script>\n  document.addEventListener(\"DOMContentLoaded\", function() {\n    const dateEl = document.getElementById('ship-date');\n    const deliveryDate = new Date();\n    \n    deliveryDate.setDate(deliveryDate.getDate() + 5); \n    \n    const options = { weekday: 'short', month: 'short', day: 'numeric' };\n    dateEl.textContent = deliveryDate.toLocaleDateString('de-DE', options);\n  });\n</script>"
+          }
+        },
         "liquid_MWTccL": {
           "type": "liquid",
           "settings": {
@@ -133,6 +139,7 @@
         "quantity_selector",
         "buy_buttons",
         "liquid_zLmK6c",
+        "liquid_rFPgkd",
         "liquid_MWTccL",
         "payment_terms",
         "liquid_BVPx4G"
