@@ -54,6 +54,7 @@
     position: relative;
     scroll-snap-align: center;
     background: #000;
+    cursor: pointer;
   }
   
   .video-card:hover {
@@ -83,6 +84,12 @@
     color: #fff;
     font-size: 12px;
     z-index: 2;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+  }
+
+  .video-card.is-playing .play-icon {
+    opacity: 0;
   }
 
   .video-stars {
@@ -131,12 +138,12 @@
   <div class="video-slider-container">
     <div class="video-track">
       {% for block in section.blocks %}
-        <div class="video-card" {{ block.shopify_attributes }}>
+        <div class="video-card" {{ block.shopify_attributes }} onclick="toggleSliderVideo(this)">
           
           <div class="play-icon">▶</div>
           
           {% if block.settings.video_url != blank %}
-            <video autoplay loop muted playsinline>
+            <video loop muted playsinline>
               <source src="{{ block.settings.video_url }}" type="video/mp4">
             </video>
           {% elsif block.settings.image != blank %}
@@ -152,6 +159,21 @@
     </div>
   </div>
 </div>
+
+<script>
+  function toggleSliderVideo(element) {
+    const video = element.querySelector('video');
+    if (!video) return; 
+    
+    if (video.paused) {
+      video.play();
+      element.classList.add('is-playing');
+    } else {
+      video.pause();
+      element.classList.remove('is-playing');
+    }
+  }
+</script>
 
 {% schema %}
 {
