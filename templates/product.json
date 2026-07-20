@@ -168,7 +168,7 @@
         "background": "",
         "background_gradient": "",
         "text_color": "",
-        "input_background": "#FDFBF7",
+        "input_background": "#fdfbf7",
         "input_text_color": ""
       }
     },
@@ -200,7 +200,7 @@
         "video_card_JmECYP"
       ],
       "custom_css": [
-        "[class*=\"marquee\"],[class*=\"scrolling\"],.marquee-container {background-color: #a8654e !important;}"
+        "[class*=\"marquee\"],[class*=\"scrolling\"],.marquee-container {background-color: #faf5f0 !important;}"
       ],
       "name": "Carrousel Vidéos UGC",
       "settings": {
