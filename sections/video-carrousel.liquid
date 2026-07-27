@@ -151,8 +151,8 @@
           <div class="play-icon"></div>
           
           {% if block.settings.video_url != blank %}
-            <video loop muted playsinline>
-              <source src="{{ block.settings.video_url }}" type="video/mp4">
+            <video preload="metadata" loop muted playsinline>
+              <source src="{{ block.settings.video_url }}#t=0.001" type="video/mp4">
             </video>
           {% elsif block.settings.image != blank %}
             <img src="{{ block.settings.image | image_url: width: 600 }}" alt="Avis vidéo">
@@ -224,3 +224,4 @@
   ]
 }
 {% endschema %}
+``` 🚀
