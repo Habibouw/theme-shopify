@@ -439,5 +439,17 @@
         "other": "Es hat {{ count }} Bewertungen erhalten."
       }
     }
+  },
+  "shopify": {
+    "checkout": {
+      "order_summary": {
+        "compare_at_sale": "Rabatt ({{ sale_amount }})"
+      }
+    }
+  },
+  "customer_accounts": {
+    "order_details": {
+      "compare_at_sale": "Rabatt ({{ sale_amount }})"
+    }
   }
 }
