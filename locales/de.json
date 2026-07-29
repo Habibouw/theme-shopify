@@ -89,7 +89,7 @@
       "added_to_cart": "Zum Warenkorb hinzugefügt!",
       "sold_out_badge": "Ausverkauft",
       "on_sale_badge": "Angebot",
-      "discount_badge_html": "- {{ savings }}",
+      "discount_badge_html": "Spare {{ savings }}",
       "sku": "SKU:",
       "variant": "Variante",
       "view_in_space": "In deinem Bereich ansehen",
