@@ -70,6 +70,11 @@
         "type": "shopify://apps/triplewhale/blocks/triple_pixel_snippet/483d496b-3f1a-4609-aea7-8eee3b6b7a2a",
         "disabled": false,
         "settings": {}
+      },
+      "7427844207058552356": {
+        "type": "shopify://apps/rapi-cart/blocks/cart-drawer/019e87e1-d1f3-73ac-b0a5-22681f5095ca",
+        "disabled": false,
+        "settings": {}
       }
     }
   },
