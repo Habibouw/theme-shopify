@@ -1,35 +1,21 @@
 <style>
   .custom-video-section {
-    background-color: #E8DDD3;
-    padding-bottom: 60px;
+    background-color: #ffffff;
+    padding: 40px 0 60px;
   }
   
-  .marquee-wrapper {
-    background-color: #000;
-    color: #fff;
-    padding: 12px 0;
-    overflow: hidden;
-    white-space: nowrap;
-    display: flex;
+  .section-title {
+    text-align: center;
     font-family: sans-serif;
-    font-size: 0.9rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-  }
-  .marquee-content {
-    display: flex;
-    gap: 40px;
-    animation: marquee 40s linear infinite;
-    padding-right: 40px;
-  }
-  @keyframes marquee {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-100%); }
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #000;
+    margin: 0 0 40px 0;
   }
 
   .video-slider-container {
     max-width: 1200px;
-    margin: 40px auto 0;
+    margin: 0 auto;
     padding: 0 20px;
     position: relative;
   }
@@ -114,6 +100,9 @@
   }
 
   @media (max-width: 768px) {
+    .section-title {
+      font-size: 1.8rem;
+    }
     .video-track {
       justify-content: flex-start;
     }
@@ -126,22 +115,7 @@
 
 <div class="custom-video-section">
   
-  <div class="marquee-wrapper">
-    <div class="marquee-content">
-      <span>{{ section.settings.marquee_text }}</span>
-      <span>{{ section.settings.marquee_text }}</span>
-      <span>{{ section.settings.marquee_text }}</span>
-      <span>{{ section.settings.marquee_text }}</span>
-      <span>{{ section.settings.marquee_text }}</span>
-    </div>
-    <div class="marquee-content" aria-hidden="true">
-      <span>{{ section.settings.marquee_text }}</span>
-      <span>{{ section.settings.marquee_text }}</span>
-      <span>{{ section.settings.marquee_text }}</span>
-      <span>{{ section.settings.marquee_text }}</span>
-      <span>{{ section.settings.marquee_text }}</span>
-    </div>
-  </div>
+  <h2 class="section-title">{{ section.settings.heading }}</h2>
 
   <div class="video-slider-container">
     <div class="video-track">
@@ -189,9 +163,9 @@
   "settings": [
     {
       "type": "text",
-      "id": "marquee_text",
-      "label": "Texte du bandeau défilant",
-      "default": "Invisible. Toujours. • Aucune marque • Zéro armature • Coton respirant • Posture redressée •"
+      "id": "heading",
+      "label": "Titre de la section",
+      "default": "Ready for an upgrade?"
     }
   ],
   "blocks": [
@@ -224,4 +198,3 @@
   ]
 }
 {% endschema %}
-``` 
