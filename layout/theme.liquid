@@ -122,5 +122,42 @@ NOTE TO DEVELOPERS: welcome to Impact theme! We hope that you will enjoy editing
         {%- sections 'footer-group' -%}
       {%- endif -%}
     </main>
+    <script>
+(function () {
+  const PRICE_SELECTOR = 'sale-price';
+  const COMPARE_SELECTOR = 'compare-at-price';
+  const BADGE_SELECTOR = 'on-sale-badge';
+
+  function parsePrice(text) {
+    if (!text) return null;
+    const cleaned = text.replace(/[^\d,.-]/g, '').replace(',', '.');
+    const value = parseFloat(cleaned);
+    return isNaN(value) ? null : value;
+  }
+
+  function updateBadge() {
+    const priceEl = document.querySelector(PRICE_SELECTOR);
+    const compareEl = document.querySelector(COMPARE_SELECTOR);
+    const badgeEl = document.querySelector(BADGE_SELECTOR);
+
+    if (!priceEl || !compareEl || !badgeEl) return;
+
+    const price = parsePrice(priceEl.textContent);
+    const compare = parsePrice(compareEl.textContent);
+
+    if (price === null || compare === null || compare <= price) return;
+
+    const savings = (compare - price).toFixed(2).replace('.', ',');
+    badgeEl.textContent = 'Sie sparen ' + savings + '€';
+  }
+
+  const priceContainer = document.querySelector('price-list') || document.body;
+  const observer = new MutationObserver(updateBadge);
+  observer.observe(priceContainer, { childList: true, subtree: true, characterData: true });
+
+  document.addEventListener('DOMContentLoaded', updateBadge);
+  updateBadge();
+})();
+</script>
   </body>
 </html>
