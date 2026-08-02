@@ -124,6 +124,7 @@ NOTE TO DEVELOPERS: welcome to Impact theme! We hope that you will enjoy editing
     </main>
     <script>
 (function () {
+  const CONTAINER_SELECTOR = '[data-block-type="price"]';
   const PRICE_SELECTOR = 'sale-price';
   const COMPARE_SELECTOR = 'compare-at-price';
   const BADGE_SELECTOR = 'on-sale-badge';
@@ -136,9 +137,12 @@ NOTE TO DEVELOPERS: welcome to Impact theme! We hope that you will enjoy editing
   }
 
   function updateBadge() {
-    const priceEl = document.querySelector(PRICE_SELECTOR);
-    const compareEl = document.querySelector(COMPARE_SELECTOR);
-    const badgeEl = document.querySelector(BADGE_SELECTOR);
+    const container = document.querySelector(CONTAINER_SELECTOR);
+    if (!container) return;
+
+    const priceEl = container.querySelector(PRICE_SELECTOR);
+    const compareEl = container.querySelector(COMPARE_SELECTOR);
+    const badgeEl = container.querySelector(BADGE_SELECTOR);
 
     if (!priceEl || !compareEl || !badgeEl) return;
 
@@ -148,12 +152,15 @@ NOTE TO DEVELOPERS: welcome to Impact theme! We hope that you will enjoy editing
     if (price === null || compare === null || compare <= price) return;
 
     const savings = (compare - price).toFixed(2).replace('.', ',');
-    badgeEl.textContent = 'Sie sparen ' + savings + '€';
+    const newText = 'Sie sparen ' + savings + '€';
+
+    if (badgeEl.textContent.trim() !== newText) {
+      badgeEl.textContent = newText;
+    }
   }
 
-  const priceContainer = document.querySelector('price-list') || document.body;
   const observer = new MutationObserver(updateBadge);
-  observer.observe(priceContainer, { childList: true, subtree: true, characterData: true });
+  observer.observe(document.body, { childList: true, subtree: true, characterData: true });
 
   document.addEventListener('DOMContentLoaded', updateBadge);
   updateBadge();
